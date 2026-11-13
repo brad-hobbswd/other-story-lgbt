@@ -559,3 +559,11 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .chapter-reading .reading-heading h1{max-width:780px;margin:0 auto;color:#f4dfb7;font-family:var(--serif);font-size:clamp(2.15rem,5vw,3.65rem);font-weight:600;line-height:1.14;text-wrap:balance}
 .chapter-reading .reading-heading h1::after{content:"";display:block;width:76px;height:2px;margin:1.25rem auto 0;background:var(--gold-300);opacity:.85}
 @media(max-width:620px){.chapter-reading .reading-heading{padding:1.8rem 1.15rem;margin-bottom:1.25rem}.chapter-reading .chapter-number{font-size:.72rem;margin-bottom:.7rem}.chapter-reading .reading-heading h1{font-size:clamp(1.9rem,8vw,2.55rem);line-height:1.18}}
+
+
+/* Introduction title treatment to match chapter opening pages */
+.frontmatter .introduction-heading{padding:clamp(2rem,4vw,3.25rem) clamp(1.25rem,4vw,3rem);margin-bottom:1.8rem;border:1px solid rgba(231,206,160,.48);border-radius:16px;background:linear-gradient(135deg,rgba(29,43,66,.98),rgba(55,43,62,.96));text-align:center}
+.frontmatter .introduction-heading h1{max-width:780px;margin:.4rem auto 0;color:#f4dfb7;font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.7rem);font-weight:600;line-height:1.14;text-wrap:balance}
+.frontmatter .introduction-heading .reading-subtitle{margin:.85rem auto 0;color:var(--ivory-100);font-family:var(--serif);font-size:clamp(1.15rem,2.5vw,1.55rem);line-height:1.4}
+.frontmatter .introduction-heading h1::after{content:"";display:block;width:76px;height:2px;margin:1.15rem auto 0;background:var(--gold-300)}
+@media(max-width:620px){.frontmatter .introduction-heading{padding:1.8rem 1.15rem;margin-bottom:1.25rem}.frontmatter .introduction-heading h1{font-size:clamp(1.95rem,8vw,2.6rem)}.frontmatter .introduction-heading .reading-subtitle{font-size:1.15rem}}
