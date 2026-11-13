@@ -725,3 +725,10 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   .legal-footer{display:grid;grid-template-columns:1fr 1fr;width:100%}
   .legal-footer a{justify-content:center;text-align:center}
 }
+
+
+/* Clear heading contrast within legal and front-matter reading panels */
+.frontmatter .reading-panel h2,
+.frontmatter .reading-panel h3 {
+  color: #26344a;
+}
