@@ -454,3 +454,11 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .about-book-heading h1{margin:0 0 .6rem;color:#26344a;font-size:clamp(2rem,4vw,3rem)}
 .about-book-subtitle{margin:0!important;color:#725b68!important;font-size:1.15rem;font-style:italic}
 @media(max-width:760px){.about-book-layout{grid-template-columns:1fr;width:min(calc(100% - 1.25rem),680px);margin:1.75rem auto 3rem;gap:1.5rem}.about-book-art{position:static;width:min(100%,390px);margin:0 auto}.about-book-cover{width:min(72%,260px)}.about-book-copy{padding:1.4rem}}
+
+
+/* Contents page */
+.contents-section{margin:2.8rem 0 3.5rem}
+.contents-section h2{margin:0 0 1.25rem;padding-bottom:.8rem;color:var(--gold-300);border-bottom:1px solid var(--line);font-size:clamp(1.55rem,3vw,2rem)}
+.contents-section .chapter-grid,.contents-section .content-grid{gap:1rem}
+.contents-section .chapter-card,.contents-section .content-card{min-height:104px;display:flex;flex-direction:column;justify-content:center}
+.contents-section .chapter-card strong,.contents-section .content-card strong{line-height:1.4}
