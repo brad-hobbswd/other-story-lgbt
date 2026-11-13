@@ -34,7 +34,7 @@
     });
 
     window.addEventListener("resize", () => {
-      if (window.matchMedia("(min-width: 821px)").matches) {
+      if (window.matchMedia("(min-width: 1025px)").matches) {
         navigation.classList.remove("is-open");
         menuButton.setAttribute("aria-expanded", "false");
       }
