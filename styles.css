@@ -442,3 +442,15 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   .landing-cover { margin: 1.5rem auto 3rem; }
   .landing-cover .book-cover { width: min(72%, 245px); }
 }
+
+/* About the book page */
+.about-book-layout{display:grid;grid-template-columns:minmax(210px,310px) minmax(0,1fr);align-items:start;gap:clamp(2rem,5vw,4.5rem);width:min(100%,1080px);margin:3.5rem auto 5rem}
+.about-book-art{position:sticky;top:2rem;padding:1.25rem;text-align:center;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(155deg,rgba(87,68,95,.24),rgba(16,24,39,.55))}
+.about-book-cover{width:min(100%,290px);margin:0 auto;border:1px solid rgba(231,206,160,.65);box-shadow:0 22px 48px rgba(0,0,0,.42)}
+.about-book-author{margin:1rem 0 .1rem;color:var(--gold-300);font-family:var(--serif);letter-spacing:.06em}
+.about-book-copy{padding:clamp(1.5rem,3.5vw,2.8rem);color:var(--ink);background:var(--ivory-100);border:1px solid rgba(231,206,160,.55);border-radius:var(--radius);box-shadow:var(--shadow);font-family:var(--serif);font-size:1.08rem;line-height:1.9}
+.about-book-copy p{color:#343943;margin:0 0 1.25em}
+.about-book-heading{margin-bottom:1.8rem;padding-bottom:1.3rem;border-bottom:1px solid rgba(87,68,95,.22)}
+.about-book-heading h1{margin:0 0 .6rem;color:#26344a;font-size:clamp(2rem,4vw,3rem)}
+.about-book-subtitle{margin:0!important;color:#725b68!important;font-size:1.15rem;font-style:italic}
+@media(max-width:760px){.about-book-layout{grid-template-columns:1fr;width:min(calc(100% - 1.25rem),680px);margin:1.75rem auto 3rem;gap:1.5rem}.about-book-art{position:static;width:min(100%,390px);margin:0 auto}.about-book-cover{width:min(72%,260px)}.about-book-copy{padding:1.4rem}}
