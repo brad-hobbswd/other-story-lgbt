@@ -480,3 +480,15 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .page-return a{display:inline-flex;align-items:center;min-height:44px;padding:.65rem 1rem;border:1px solid var(--line);border-radius:8px;color:var(--gold-300);text-decoration:none}
 .page-return a:hover{background:var(--surface);border-color:var(--gold-400)}
 @media(max-width:620px){.frontmatter,.chapter-reading{margin:1.5rem auto 3rem}.reading-heading{padding:1.5rem 1rem}.reading-panel{padding:1.3rem;line-height:1.82}.page-return{flex-direction:column;align-items:stretch}.page-return a{justify-content:center}}
+
+
+/* Chapter navigation: consistent, responsive reading controls */
+.chapter-navigation{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:stretch;gap:.85rem;margin:1.65rem 0 0;padding:1rem;border:1px solid rgba(231,206,160,.2);border-radius:14px;background:linear-gradient(135deg,rgba(23,35,56,.96),rgba(45,37,55,.94));box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.chapter-nav-link,.chapter-nav-contents{display:flex;flex-direction:column;justify-content:center;gap:.35rem;min-width:0;min-height:72px;padding:.85rem 1rem;border:1px solid rgba(231,206,160,.24);border-radius:10px;color:var(--ivory-100);text-decoration:none;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.chapter-nav-link:hover,.chapter-nav-contents:hover{background:rgba(185,145,91,.13);border-color:var(--gold-300);transform:translateY(-2px)}
+.chapter-nav-prev{align-items:flex-start;text-align:left}.chapter-nav-next{align-items:flex-end;text-align:right}
+.chapter-nav-kicker{color:var(--gold-300);font-size:.68rem;font-weight:700;letter-spacing:.13em;line-height:1.3;text-transform:uppercase}
+.chapter-nav-link strong{font-family:var(--serif);font-size:1rem;line-height:1.35}
+.chapter-nav-contents{align-items:center;justify-content:center;min-width:116px;color:var(--gold-300);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-align:center;text-transform:uppercase}
+.contents-icon{font-size:1.35rem;line-height:1}.chapter-nav-spacer{display:block;min-width:0}
+@media(max-width:620px){.chapter-navigation{grid-template-columns:1fr 1fr;gap:.65rem;padding:.7rem}.chapter-nav-contents{grid-column:1/-1;grid-row:1;flex-direction:row;min-height:48px;gap:.55rem}.chapter-nav-link{min-height:68px;padding:.7rem}.chapter-nav-link strong{font-size:.92rem}.chapter-nav-spacer{display:none}}
