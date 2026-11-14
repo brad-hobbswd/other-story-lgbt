@@ -732,3 +732,23 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .frontmatter .reading-panel h3 {
   color: #26344a;
 }
+
+
+/* Keep contents cards in two columns on mobile */
+@media (max-width: 620px) {
+  .contents-section .chapter-grid,
+  .contents-section .content-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .65rem;
+  }
+  .contents-section .chapter-card,
+  .contents-section .content-card {
+    min-height: 96px;
+    padding: .9rem .8rem;
+  }
+  .contents-section .chapter-card strong,
+  .contents-section .content-card strong {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
